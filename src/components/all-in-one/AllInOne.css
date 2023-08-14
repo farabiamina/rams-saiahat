@@ -1,0 +1,88 @@
+#all-in-one {
+    display: flex;
+}
+
+#all-in-one .left-img {
+    width: 40%;
+    border-radius: 0 100% 100% 0;
+    position: relative;
+    left: -40px;
+}
+
+#all-in-one .buttons {
+    display: flex;
+    gap: 10px;
+}
+
+#all-in-one button {
+    width: 3em;
+    height: 3em;
+    border-radius: 100%;
+    background-color: #F0641E;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#all-in-one button:hover {
+    background-color: #f06e2d;
+}
+
+#all-in-one button > * {
+    width: 60%;
+}
+
+#all-in-one button .right {
+    transform: rotate(180deg);
+}
+
+#all-in-one .top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 14px;
+}
+
+#all-in-one .card {
+    display: flex;
+    flex: 0 0 30%;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#all-in-one .card-bg {
+    width: 100%;
+    padding-top: 120%;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+#all-in-one .slider {
+    position: relative;
+    display: flex;
+    overflow-x: scroll;
+    gap: 20px;
+    cursor: grab;
+}
+
+#all-in-one .slider::-webkit-scrollbar {
+    display: none;
+}
+
+#all-in-one .card h4 {
+    line-height: 120%;
+    color: #FFFFFF;
+    margin: 20px 30px;
+
+}
+
+#all-in-one .card p {
+    font-family: 'K_Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    color: #F2F2F2;
+    text-transform: none;
+    width: 100%;
+}

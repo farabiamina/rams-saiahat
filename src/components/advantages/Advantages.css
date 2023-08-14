@@ -1,0 +1,189 @@
+#advantages .inner {
+    display: flex;
+    gap: 20px;
+    row-gap: 20px;
+}
+
+#advantages .left {
+    display: flex;
+    gap: 20px;
+    row-gap: 20px;
+    width: calc(50% - 10px);
+}
+
+#advantages .column {
+    display: flex;
+    width: calc(50% - 10px);
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+#advantages .right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    row-gap: 20px;
+    width: calc(50% - 10px);
+}
+
+#advantages .row {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+#advantages h2 {
+    color: white;
+    font-family: "Gilroy";
+    font-size: 1.3em;
+    font-style: normal;
+    font-weight: 600;
+}
+
+#advantages p {
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+#advantages .item {
+    padding: 30px;
+    background-repeat: no-repeat !important;
+    background-position: 10% 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+#advantages .item > * {
+    max-width: 350px;
+}
+
+#advantages .item1 {
+    border-radius: 20px 20px 150px 20px;
+    background: #A0D773;
+    background-image: url("../../images/adv1.png");
+    background-position: 50% calc(200%);
+    background-size: 85%;
+}
+
+#advantages .item4 {
+    border-radius: 150px 20px 20px 20px;
+    background: var(--2, #00705A);
+    /* height: 100%; */
+    background-image: url("../../images/adv2.png");
+    background-position: -10% 100%;
+    background-size: 70%;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#advantages .item3 {
+    border-radius: 20px 20px 150px 20px;
+    background: var(--unnamed, #F0641E);
+    background-image: url("../../images/adv3.png");
+    background-size: 120%;
+    background-position: 50% 160%;
+}
+
+#advantages .item2 {
+    border-radius: 20px 20px 20px 150px;
+    background: var(--2, #00705A);
+    background-image: url("../../images/adv4.png");
+    background-position: 80% 100%;
+}
+
+#advantages .item4 h2 {
+    text-align: right;
+}
+
+#advantages .item5 {
+    border-radius: 150px 20px 20px 20px;
+    background-color: #FFF;
+    background-image: url("../../images/adv5.png");
+    background-size: 80%;
+    background-position: 80% calc(100% + 50px);
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#advantages .item5 h2, #advantages .item5 p {
+    color: #333;
+    text-align: right;
+}
+
+#advantages .item6 {
+    border-radius: 20px 20px 20px 150px;
+    background: var(--unnamed, #333);
+    background-image: url("../../images/adv6.png");
+    background-size: 32%;
+    background-position: 90% 100%;
+}
+
+#advantages table.short {
+    display: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    width: 25%;
+    height: 0;
+    padding-bottom: 25%;
+    position: relative;
+    border: 20px solid transparent;
+}
+
+tr {
+    width: 100%;
+}
+
+.cell2 {
+    height: 0;
+    padding-bottom: 50%;
+}
+
+.cell5 {
+    width: 50%;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+}
+
+@media screen and (max-width: 960px) {
+    #advantages table {
+        display: none;
+    }
+    #advantages table.short {
+        display: block;
+    }
+
+    td {
+        width: 50%;
+        /* height: 0; */
+        padding-bottom: 25%;
+        position: relative;
+        /* border: 20px solid transparent; */
+    }
+    
+    .cell2 {
+        height: 0;
+        padding-bottom: 50%;
+    }
+    
+    .cell5 {
+        width: 100%;
+    }
+}

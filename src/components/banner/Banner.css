@@ -1,0 +1,133 @@
+#banner {
+    padding-top: 0;
+    position: relative;
+}
+
+#banner .header {
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#banner .logo {
+    width: 10%;
+    min-width: 140px;
+    /* padding-right: 20px; */
+}
+
+#banner nav {
+    width: calc(82% - 240px);
+}
+
+#banner .phone {
+    width: 18%;
+    background-color: white;
+    position: relative;
+    right: -40px;
+    height: 44px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 18px;
+}
+
+#banner .phone-svg {
+    width: 10%;
+}
+
+#banner button {
+    color: var(--unnamed, #333);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    transition: 0.2s;
+}
+
+#banner button:hover {
+    color: #F0641E;
+}
+
+#banner .carousel {
+    width: 40%;
+    position: absolute;
+    top: 0;
+    right: 5%;
+    height: 0;
+    padding-bottom: 40%;
+    border-radius: 0 0 999px 999px;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#banner .img-con {
+    width: 100%;
+}
+
+#banner .carousel img {
+    width: 134%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#banner .headings {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+    padding-top: 3%;
+    align-items: flex-start;
+}
+
+#banner h1 {
+    color: var(--unnamed, #F0641E);
+    font-family: "Codec Pro Bold";
+    font-size: calc(4vw);
+    font-style: normal;
+    font-weight: 900;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+
+#banner h2 {
+    color: #333;
+    font-family: "Codec Pro";
+    font-size: 2.5vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    letter-spacing: -1.62px;
+}
+
+#banner h3 {
+    color: #00705a;
+    font-size: 2.5vw;
+    font-family: 'Codec Pro';
+    line-height: 1.2;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+/* #banner .headings button {
+    height: 50px;
+    padding: 15px 36px;
+    background-color: #00705a;
+    color: white;
+    border-radius: 79px;
+    background: var(--2, #00705A);
+    line-height: 0.95;
+} */
+
+#banner .bg {
+    position: absolute;
+    z-index: -1;
+    width: 60%;
+    top: -43%;
+    left: -15%;
+}
+
+#banner .bg2 {
+    left: 40%;
+    top: -30%;
+}
