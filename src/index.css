@@ -74,7 +74,7 @@ h1 {
   font-size: 2.5em;
 }
 
-h2 {
+h2, h2.primary {
   font-size: 2em;
   color: var(--unnamed, #333);
   font-family: "Gilroy";
@@ -116,5 +116,5 @@ button.primary {
 }
 
 .orange {
-  color: #F0641E;
+  color: #F0641E !important;
 }

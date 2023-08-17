@@ -1,5 +1,6 @@
 import React from 'react';
 import "./Advantages.css";
+import BaseForm from '../form/BaseForm';
 
 const Advantages = () => {
     return (
@@ -122,6 +123,7 @@ const Advantages = () => {
                     </tr>
                 </table>
             </div>
+            <BaseForm type="up"/>
         </section>
     )
 }

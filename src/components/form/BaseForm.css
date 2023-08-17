@@ -1,0 +1,144 @@
+#form {
+    margin-top: 100px;
+    border-radius: 20px;
+    border: 2px solid white;
+    padding: 68px 94px;
+    display: flex;
+    overflow: hidden;
+    justify-content: flex-end;
+    position: relative;
+    gap: 10%;
+    align-items: center;
+}
+
+#form .text {
+    width: 30%;
+}
+
+#form h2 {
+    font-size: 2em;
+    color: var(--unnamed, #333);
+    font-family: "Gilroy";
+}
+
+#form p {
+    color: var(--unnamed, #333);
+}
+
+#form form {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    align-items: stretch;
+}
+
+#form .svg {
+    width: 25%;
+    position: absolute;
+    top: -40%;
+    left: -1%;
+}
+
+#form .error {
+    position: absolute;
+    height: 11px;
+    color: rgb(255, 119, 119);
+    font-size: 11px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#form .error.active {
+    opacity: 1;
+}
+
+#form .check {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.16px;
+    font-size: 0.7em;
+    display: block;
+    position: relative;
+    padding-left: 26px;
+}
+
+#form .check input {
+    display: none;
+}
+
+#form .check span {
+    transition: 0.2s;
+    position: absolute;
+    /* top: 3px; */
+    transform: translateY(25%);
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+#form .check input:checked~span {
+    background-color: #F0641E;
+    border-radius: 3px;
+}
+
+#form .check span::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+#form .check input:checked~span:after {
+    display: block;
+}
+
+#form .check span:after {
+    left: 6px;
+    top: 2px;
+    width: 3px;
+    height: 7px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#form input {
+    outline: none;
+    border-radius: 99px;
+    border: 1px solid var(--gray-4, #BDBDBD);
+    padding: 15px 25px 11px 25px;
+    color: var(--gray-3, #828282);
+    font-family: 'Gilroy';
+    font-size: 0.7em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    background-color: transparent;
+    width: 100%;
+}
+
+#form button {
+    border-radius: 79px;
+    background: var(--unnamed, #F0641E);
+    color: var(--unnamed, #FFF);
+    font-family: 'Gilroy';
+    font-size: 0.75em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    align-self: flex-start;
+    padding: 15px 35px;
+}
+
+#form .img {
+    position: absolute;
+    left: 0;
+    width: 30%;
+    border-radius: 0 999px 999px 0;
+}

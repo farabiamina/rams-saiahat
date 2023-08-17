@@ -44,11 +44,11 @@
 #purchase .photo {
     position: absolute;
     width: 30%;
-    height: 50%;
+    height: 40%;
     background-image: url('../../images/allphoto.jpg');
     background-size: cover;
     right: 0;
-    top: 20%;
+    top: 10%;
     border-radius: 999px 0 0 999px;
     z-index: -1;
 }

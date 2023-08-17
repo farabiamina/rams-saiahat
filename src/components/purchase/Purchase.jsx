@@ -5,6 +5,7 @@ import Icon2 from "../../svg/Icon2Svg";
 import Icon3 from "../../svg/Icon3Svg";
 import Icon4 from "../../svg/Icon4Svg";
 import Photo from "../../images/allphoto.jpg"
+import BaseForm from '../form/BaseForm';
 
 const Purchase = () => {
     return (
@@ -42,6 +43,7 @@ const Purchase = () => {
                 </div>
             </div>
             <div className="photo"></div>
+            <BaseForm/>
         </section>
     )
 }
