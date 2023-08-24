@@ -8,8 +8,8 @@ import MapImg1 from "../../images/map1.jpg";
 import MapImg2 from "../../images/map2.jpg";
 import MapImg3 from "../../images/map3.jpg";
 import Map from "../../svg/MapSvg";
-import ZoomImg from "../../images/zoom.jpg";
-import ZoomSvg from "../../svg/ZoomSvg";
+import Panorama from '../panorama/Panorama';
+
 
 const Location = () => {
     return (
@@ -87,21 +87,7 @@ const Location = () => {
                     <Map />
                 </div>
             </div>
-            <div className="zoom">
-                <img className='zoom-img' src={ZoomImg} alt="" />
-                <div className="zoom-btn one">
-                    <ZoomSvg className="zoom-svg"/>
-                </div>
-                <div className="zoom-btn two">
-                    <ZoomSvg className="zoom-svg"/>
-                </div>
-                <div className="zoom-btn three">
-                    <ZoomSvg className="zoom-svg"/>
-                </div>
-                <div className="zoom-btn four">
-                    <ZoomSvg className="zoom-svg"/>
-                </div>
-            </div>
+            <Panorama/>
         </section>
     )
 }

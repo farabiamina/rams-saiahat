@@ -364,7 +364,7 @@ const Form = ({ formId }) => {
                 <input
                     type="text"
                     name="name"
-                    placeholder='Имя'
+                    placeholder='Введите имя'
                     value={name}
                     onChange={(e) => { setName(e.target.value); setNameErr(false) }}
                 />
@@ -375,7 +375,7 @@ const Form = ({ formId }) => {
             <div className='form-text'>
                 <InputMask mask="+7 (799) 999-99-99" maskChar=" "
                     type="text" id='phone'
-                    placeholder='Телефон'
+                    placeholder='Введите телефон'
                     value={phone}
                     onChange={(e) => { setPhone(e.target.value); setPhoneErr(false) }}
                 />
