@@ -5,7 +5,7 @@ const Navigation = (props) => {
     <nav {...props}>
         <a>Преимущества</a>
         <a>Расположение</a>
-        <a>ALL-in-ONE</a>
+        <a>All in One</a>
         <a>Способы оплаты</a>
     </nav>
   )

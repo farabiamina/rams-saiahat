@@ -1,133 +1,275 @@
 #banner {
-    padding-top: 0;
-    position: relative;
+  padding-top: 0;
+  position: relative;
 }
 
 #banner .header {
-    padding: 30px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #banner .logo {
-    width: 10%;
-    min-width: 140px;
-    /* padding-right: 20px; */
+  width: 10%;
+  min-width: 140px;
+  /* padding-right: 20px; */
 }
 
 #banner nav {
-    width: calc(82% - 240px);
+  width: calc(82% - 240px);
+  gap: 3%;
+}
+
+#banner a {
+  transition: 0.3s;
+}
+
+#banner a:hover {
+  color: #f0641e;
 }
 
 #banner .phone {
-    width: 18%;
-    background-color: white;
-    position: relative;
-    right: -40px;
-    height: 44px;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding-left: 18px;
+  width: 18%;
+  background-color: white;
+  position: relative;
+  right: -40px;
+  /* height: 44px; */
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  padding-left: 18px;
 }
 
 #banner .phone-svg {
-    width: 10%;
+  width: 10%;
 }
 
 #banner button {
-    color: var(--unnamed, #333);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 140%;
-    transition: 0.2s;
+  color: var(--unnamed, #333);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  transition: 0.2s;
+  margin-top: 15px;
 }
 
 #banner button:hover {
-    color: #F0641E;
+  color: #f0641e;
 }
 
 #banner .carousel {
-    width: 40%;
-    position: absolute;
-    top: 0;
-    right: 5%;
-    height: 0;
-    padding-bottom: 40%;
-    border-radius: 0 0 999px 999px;
-    overflow: hidden;
-    z-index: -1;
+  width: 40%;
+  position: absolute;
+  top: 0;
+  right: 5%;
+  height: 0;
+  padding-bottom: 40%;
+  border-radius: 0 0 999px 999px;
+  overflow: hidden;
+  z-index: -1;
 }
 
 #banner .img-con {
-    width: 100%;
+  width: 100%;
 }
 
 #banner .carousel img {
-    width: 134%;
-    object-fit: cover;
-    object-position: center;
+  width: 134%;
+  object-fit: cover;
+  object-position: center;
 }
 
 #banner .headings {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5vw;
-    padding-top: 3%;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  padding-top: 3%;
+  align-items: flex-start;
+  /* font-size: 1em; */
 }
 
 #banner h1 {
-    color: var(--unnamed, #F0641E);
-    font-family: "Codec Pro Bold";
-    font-size: calc(4vw);
-    font-style: normal;
-    font-weight: 900;
-    line-height: 100%;
-    text-transform: uppercase;
+  color: var(--unnamed, #f0641e);
+  font-family: "Codec Pro Bold";
+  font-size: 3em;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 100%;
+  text-transform: uppercase;
 }
 
 #banner h2 {
-    color: #333;
-    font-family: "Codec Pro";
-    font-size: 2.5vw;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 110%;
-    letter-spacing: -1.62px;
+  color: #333;
+  font-family: "Codec Pro";
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: -1.62px;
 }
 
 #banner h3 {
-    color: #00705a;
-    font-size: 2.5vw;
-    font-family: 'Codec Pro';
-    line-height: 1.2;
-    font-weight: 600;
-    letter-spacing: -1px;
+  color: #00705a;
+  font-size: 2em;
+  font-family: "Codec Pro";
+  line-height: 1.2;
+  font-weight: 900;
+  letter-spacing: -1px;
 }
 
-/* #banner .headings button {
-    height: 50px;
-    padding: 15px 36px;
-    background-color: #00705a;
-    color: white;
-    border-radius: 79px;
-    background: var(--2, #00705A);
-    line-height: 0.95;
-} */
-
 #banner .bg {
-    position: absolute;
-    z-index: -1;
-    width: 60%;
-    top: -43%;
-    left: -15%;
+  position: absolute;
+  z-index: -1;
+  width: 60%;
+  top: -43%;
+  left: -15%;
 }
 
 #banner .bg2 {
-    left: 40%;
-    top: -30%;
+  left: 40%;
+  top: -30%;
+}
+
+@media screen and (max-width: 1120px) {
+  #banner nav {
+    display: none;
+  }
+
+  #banner h1 {
+    font-size: 4.5em;
+  }
+
+  #banner h2 {
+    font-size: 2em;
+    width: 50%;
+  }
+
+  #banner h3 {
+    font-size: 3em;
+    width: 70%;
+  }
+
+  #banner .carousel {
+    width: 50%;
+    height: 90%;
+  }
+
+  #banner .headings {
+    width: 70%;
+  }
+
+  #banner .carousel img {
+    width: 170%;
+  }
+
+  #banner .phone {
+    width: 30%;
+    font-size: 3vw;
+  }
+
+  #banner .logo {
+    width: 20%;
+  }
+
+  #banner button {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  #banner h1 {
+    font-size: 3.5em;
+  }
+
+  #banner h2 {
+    font-size: 1.5em;
+    width: 50%;
+  }
+
+  #banner h3 {
+    font-size: 2em;
+    width: 70%;
+  }
+
+  #banner button {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #banner {
+    padding-top: 65px;
+  }
+  #banner .header {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #banner .carousel {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 450px;
+  }
+
+  #banner .header {
+    justify-content: flex-end;
+  }
+
+  #banner .logo {
+    display: none;
+  }
+
+  #banner .headings {
+    padding-top: 450px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #banner .headings > * {
+    text-align: center;
+  }
+
+  #banner h1 {
+    font-size: 4.5em;
+    width: 100%;
+  }
+
+  #banner h2 {
+    font-size: 3em;
+    width: 100%;
+  }
+
+  #banner h3 {
+    font-size: 3em;
+    width: 100%;
+  }
+
+  #banner button {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #banner h1 {
+    font-size: 5em;
+    width: 100%;
+  }
+
+  #banner h2 {
+    font-size: 5em;
+    width: 100%;
+  }
+
+  #banner h3 {
+    font-size: 4em;
+    width: 100%;
+  }
 }

@@ -2,7 +2,7 @@
     margin-top: 100px;
     border-radius: 20px;
     border: 2px solid white;
-    padding: 68px 94px;
+    padding: 5% 10%;
     display: flex;
     overflow: hidden;
     justify-content: flex-end;
@@ -15,7 +15,7 @@
     width: 30%;
 }
 
-#form h2 {
+/* #form h2 {
     font-size: 2em;
     color: var(--unnamed, #333);
     font-family: "Gilroy";
@@ -23,7 +23,7 @@
 
 #form p {
     color: var(--unnamed, #333);
-}
+} */
 
 #form form {
     width: 30%;
@@ -35,10 +35,11 @@
 }
 
 #form .svg {
-    width: 25%;
+    width: 35%;
     position: absolute;
-    top: -40%;
+    top: -20%;
     left: -1%;
+    z-index: -1;
 }
 
 #form .error {
@@ -112,14 +113,14 @@
     outline: none;
     border-radius: 99px;
     border: 1px solid var(--gray-4, #BDBDBD);
-    padding: 15px 25px 11px 25px;
+    padding: 14px 25px 14px 25px;
     color: var(--gray-3, #828282);
     font-family: 'Gilroy';
-    font-size: 0.7em;
+    /* font-size: 1em; */
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
-    background-color: transparent;
+    background-color: white;
     width: 100%;
 }
 
@@ -128,7 +129,7 @@
     background: var(--unnamed, #F0641E);
     color: var(--unnamed, #FFF);
     font-family: 'Gilroy';
-    font-size: 0.75em;
+    /* font-size: 0.75em; */
     font-style: normal;
     font-weight: 400;
     line-height: 110%;
@@ -142,3 +143,56 @@
     width: 30%;
     border-radius: 0 999px 999px 0;
 }
+
+@media screen and (max-width: 960px) {
+    #form {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    #form .text {
+        width: 60%;
+    }
+
+    #form form {
+        width: 60%;
+    }
+
+    #form .svg {
+        width: 70%;
+        position: absolute;
+        top: -25%;
+        left: -20%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #form .text {
+        width: 100%;
+    }
+
+    #form form {
+        width: 100%;
+    }
+
+    #form .svg {
+        width: 100%;
+        top: -35%;
+        left: -5%;
+    }
+
+    #form button {
+        align-self: unset;
+    }
+
+    #form .text * {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #form .svg {
+        display: none;
+    }
+}
+

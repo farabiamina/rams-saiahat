@@ -36,7 +36,7 @@ const Advantages = () => {
                         <p>Вблизи от станции метро Райымбек Батыра, вокзала Алматы-2 и дороги в аэропорт.</p>
                     </div>
                 </div> */}
-                <table>
+                <table className='wide'>
                     <tr>
                         <td className="cell1">
                             <div className="content item item1">
@@ -77,6 +77,7 @@ const Advantages = () => {
                         </td>
                     </tr>
                 </table>
+                
                 <table className='short'> 
                     <tr>
                         <td className="cell1">

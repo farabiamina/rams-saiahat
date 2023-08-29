@@ -17,8 +17,8 @@ const BaseForm = (props) => {
 
             <div className="text">
                 <p className="orange">Заявка</p>
-                <h2 className='primary'>Узнайте дату старта продаж первыми</h2>
-                <p>Оставьте заявку, чтобы получить выгодные условия</p>
+                <h2 className='primary'>Уже в продаже</h2>
+                <p>Оставьте заявку и получите полный выбор планировок по стартовым ценам!</p>
             </div>
             <Form />
         </div>

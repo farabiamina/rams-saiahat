@@ -45,7 +45,7 @@
 
 #all-in-one .card {
     display: flex;
-    flex: 0 0 30%;
+    flex: 0 0 50%;
     flex-direction: column;
     justify-content: flex-start;
 }
@@ -85,4 +85,17 @@
     color: #F2F2F2;
     text-transform: none;
     width: 100%;
+}
+
+#all-in-one .carousel {
+    width: 60%;
+}
+
+@media screen and (max-width: 880px) {
+    /* #all-in-one .card {
+        display: flex;
+        flex: 0 0 45%;
+        flex-direction: column;
+        justify-content: flex-start;
+    } */
 }

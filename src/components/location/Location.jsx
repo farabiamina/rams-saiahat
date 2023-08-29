@@ -77,15 +77,22 @@ const Location = () => {
                         {/* <p>Поблизости ТРЦ и гипермаркеты, Зеленый базар, Центральная мечеть, Парк 28 гвардейцев-панфиловцев.</p> */}
                     </div>
                     <Carousel autoplay fade dots={false} className='carousel'>
-                        <img src={MapImg1} alt="" />
-                        <img src={MapImg2} alt="" />
-                        <img src={MapImg3} alt="" />
+                        <div className='img-con'>
+                            <img src={MapImg1} alt="" />
+                        </div>
+                        <div className='img-con'>
+                            <img src={MapImg2} alt="" />
+                        </div>
+                        <div className='img-con'>
+                            <img src={MapImg3} alt="" />
+                        </div>
                     </Carousel>
                     <button className='primary'>Проложить маршрут</button>
                 </div>
                 <div className="map-svg">
                     <Map />
                 </div>
+                <button className='primary'>Проложить маршрут</button>
             </div>
             <Panorama/>
         </section>
